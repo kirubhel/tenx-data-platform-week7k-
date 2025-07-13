@@ -7,3 +7,5 @@ data/*
 dbt_project/target/
 dbt_project/dbt_modules/
 dbt_project/dbt_packages/
+data/raw/*
+!data/raw/.gitkeep

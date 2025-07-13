@@ -1,0 +1,95 @@
+[0m20:13:44.712331 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104f1e8d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107fe3f50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107ffa650>]}
+
+
+============================== 20:13:44.716695 | 8e1770f5-9e0d-4b17-ad9d-0b9eec9e8125 ==============================
+[0m20:13:44.716695 [info ] [MainThread]: Running with dbt=1.10.4
+[0m20:13:44.717082 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/oza/.dbt', 'debug': 'False', 'warn_error': 'None', 'log_path': 'logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt init tenx_dbt_project', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m20:13:44.728019 [info ] [MainThread]: Creating dbt configuration folder at /Users/oza/.dbt
+[0m20:13:44.729147 [debug] [MainThread]: Starter project path: /Users/oza/Developer/10 Acadamy/week7/tenx-data-platform-week7k-/venv/lib/python3.11/site-packages/dbt/include/starter_project
+[0m20:13:44.733476 [info ] [MainThread]: 
+Your new dbt project "tenx_dbt_project" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m20:13:44.733837 [info ] [MainThread]: Setting up your profile.
+[0m20:15:04.667197 [info ] [MainThread]: Profile tenx_dbt_project written to /Users/oza/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m20:15:04.674129 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 80.008286, "process_in_blocks": "0", "process_kernel_time": 0.239331, "process_mem_max_rss": "108167168", "process_out_blocks": "0", "process_user_time": 0.880301}
+[0m20:15:04.674649 [debug] [MainThread]: Command `dbt init` succeeded at 20:15:04.674531 after 80.01 seconds
+[0m20:15:04.676246 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107f7c150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107fe2e90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x100d2b0d0>]}
+[0m20:15:04.677164 [debug] [MainThread]: Flushing usage events
+[0m20:15:11.081512 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m20:19:44.289284 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10aef7690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b30a450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b30ae90>]}
+
+
+============================== 20:19:44.295293 | 7a7c6967-7fee-48ff-b7ba-3e6958a6d52f ==============================
+[0m20:19:44.295293 [info ] [MainThread]: Running with dbt=1.10.4
+[0m20:19:44.296046 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'logs', 'profiles_dir': '/Users/oza/.dbt', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'invocation_command': 'dbt run', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m20:19:44.296785 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /Users/oza/Developer/10 Acadamy/week7/tenx-data-platform-week7k-/dbt_project/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m20:19:44.299697 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.068183914, "process_in_blocks": "0", "process_kernel_time": 0.229812, "process_mem_max_rss": "108150784", "process_out_blocks": "0", "process_user_time": 0.947197}
+[0m20:19:44.300122 [debug] [MainThread]: Command `dbt run` failed at 20:19:44.300052 after 0.07 seconds
+[0m20:19:44.300403 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b27c2d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b317790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b317b50>]}
+[0m20:19:44.300905 [debug] [MainThread]: Flushing usage events
+[0m20:19:45.421694 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m20:19:47.198418 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x119ee3350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x119ee2e90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11a00b8d0>]}
+
+
+============================== 20:19:47.203356 | 8e895bb5-94ee-4eaf-b6e5-cd2f603f7e6a ==============================
+[0m20:19:47.203356 [info ] [MainThread]: Running with dbt=1.10.4
+[0m20:19:47.205328 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/oza/.dbt', 'debug': 'False', 'warn_error': 'None', 'log_path': 'logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt test', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m20:19:47.206691 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /Users/oza/Developer/10 Acadamy/week7/tenx-data-platform-week7k-/dbt_project/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m20:19:47.209566 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": false, "command_wall_clock_time": 0.06313692, "process_in_blocks": "0", "process_kernel_time": 0.147654, "process_mem_max_rss": "108298240", "process_out_blocks": "0", "process_user_time": 0.898647}
+[0m20:19:47.210017 [debug] [MainThread]: Command `dbt test` failed at 20:19:47.209948 after 0.06 seconds
+[0m20:19:47.210330 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11a0177d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11a017f90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1045dfdd0>]}
+[0m20:19:47.210605 [debug] [MainThread]: Flushing usage events
+[0m20:19:48.056725 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m20:19:49.646149 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a0e75d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a10a810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a10b1d0>]}
+
+
+============================== 20:19:49.650683 | 7b55e61d-7a9a-45af-b9dc-d4b920ff3c25 ==============================
+[0m20:19:49.650683 [info ] [MainThread]: Running with dbt=1.10.4
+[0m20:19:49.651239 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': '/Users/oza/.dbt', 'log_path': 'logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'invocation_command': 'dbt docs generate', 'send_anonymous_usage_stats': 'True'}
+[0m20:19:49.651675 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /Users/oza/Developer/10 Acadamy/week7/tenx-data-platform-week7k-/dbt_project/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m20:19:49.653148 [debug] [MainThread]: Resource report: {"command_name": "generate", "command_success": false, "command_wall_clock_time": 0.052057832, "process_in_blocks": "0", "process_kernel_time": 0.13461, "process_mem_max_rss": "107839488", "process_out_blocks": "0", "process_user_time": 0.848551}
+[0m20:19:49.653465 [debug] [MainThread]: Command `dbt docs generate` failed at 20:19:49.653408 after 0.05 seconds
+[0m20:19:49.653718 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a10b050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a07e5d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a07fe90>]}
+[0m20:19:49.653969 [debug] [MainThread]: Flushing usage events
+[0m20:19:50.692592 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m20:20:05.968759 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10abe2910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ac0a0d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ac0ab10>]}
+
+
+============================== 20:20:05.973882 | 351617f4-5ed4-4ee1-8121-d938cf37e9bd ==============================
+[0m20:20:05.973882 [info ] [MainThread]: Running with dbt=1.10.4
+[0m20:20:05.974455 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/oza/.dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'invocation_command': 'dbt run', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'send_anonymous_usage_stats': 'True'}
+[0m20:20:05.974864 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /Users/oza/Developer/10 Acadamy/week7/tenx-data-platform-week7k-/dbt_project/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m20:20:05.976696 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.05465529, "process_in_blocks": "0", "process_kernel_time": 0.217917, "process_mem_max_rss": "108101632", "process_out_blocks": "0", "process_user_time": 0.897125}
+[0m20:20:05.976998 [debug] [MainThread]: Command `dbt run` failed at 20:20:05.976941 after 0.06 seconds
+[0m20:20:05.977265 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ab77d90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ab77e10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ab77f50>]}
+[0m20:20:05.977514 [debug] [MainThread]: Flushing usage events
+[0m20:20:06.939016 [debug] [MainThread]: An error was encountered while trying to flush usage events

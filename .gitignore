@@ -1,0 +1,9 @@
+.env
+__pycache__/
+*.pyc
+*.sqlite3
+data/*
+!data/raw/.gitkeep
+dbt_project/target/
+dbt_project/dbt_modules/
+dbt_project/dbt_packages/

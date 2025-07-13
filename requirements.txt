@@ -1,0 +1,9 @@
+telethon
+python-dotenv
+sqlalchemy
+pandas
+dbt-postgres
+ultralytics
+fastapi
+uvicorn
+dagster
